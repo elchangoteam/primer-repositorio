@@ -1,0 +1,236 @@
+body {
+    margin: 0px;
+
+}
+
+
+.grilla {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "header header header header"
+        "primera-seccion segunda-seccion tercera-seccion cuarta-seccion"
+        "footer footer footer footer"
+
+}
+
+
+.header {
+    grid-area: header;
+
+}
+
+
+
+.primera-seccion {
+    grid-area: primera-seccion;
+
+}
+
+.segunda-seccion {
+    grid-area: segunda-seccion;
+
+}
+
+.tercera-seccion {
+    grid-area: tercera-seccion;
+
+}
+
+.cuarta-seccion {
+    grid-area: cuarta-seccion;
+
+}
+
+
+.footer {
+    grid-area: footer;
+
+
+}
+
+.heroScene {
+
+    height: 100vh;
+    background-image: url(../img/background-principal.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+.servicios {
+
+    height: 650px;
+    background-image: url(../img/residentes-jugando-al-tejo.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.instalaciones {
+
+    height: 650px;
+    background-image: url(../img/residencia-atras.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.actividades {
+
+    height: 650px;
+    background-image: url(../img/motricidad-fina-en-la-tercera-edad.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.contacto {
+
+    height: 650px;
+    background-image: url(../img/ayekan-geriatrico-en-cordoba-6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+.title {
+
+    font-size: 98px;
+    line-height: 90px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 15vh;
+
+}
+
+.title2 {
+    font-size: 30px;
+}
+
+.subtitle {
+
+    font-size: 22px;
+    color: #ffffff;
+    text-align: center;
+    font-family: sans-serif;
+    letter-spacing: 6px;
+    font-weight: 100;
+    margin-top: -50px;
+
+}
+
+.locate {
+
+    font-size: 22px;
+    color: #ffffff;
+    text-align: center;
+    font-family: sans-serif;
+    letter-spacing: 6px;
+    font-weight: 100;
+    margin-top: 25vh;
+
+}
+
+.menu {
+
+    display: flex;
+    justify-content: right;
+
+}
+
+.menu li {
+
+    margin: 0 15px;
+    text-decoration: none !important;
+    list-style: none;
+
+}
+
+.menu li a {
+    color: #ffffff;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    font-family: sans-serif;
+
+}
+
+.nav {
+    display: flex;
+    padding: 15px 50px;
+
+}
+
+.footer {
+
+    background-color: #cda980;
+    display: flex;
+    color: #ffffff;
+
+}
+
+.main {
+
+
+    display: flex;
+
+
+}
+
+.col-50 {
+
+    width: 50%;
+    padding: 40px;
+
+
+}
+
+.img-responsive {
+    width: 100%;
+    height: auto;
+
+}
+
+.no-padd {
+    padding: none !important;
+    margin: 0 !important;
+}
+
+
+/* MEDIA QUERY*/
+/* MOBILE LAST = ANCHO MAX | MAX-WIDTH */
+/*MOBILE FIST = ANCHO MINIMO | MIN-WIDTH*/
+
+/* Si como máximo tengo 768px de ancho pasa lo que esta entre llaves */
+@media (max-width: 768px){
+    .grilla{
+        grid-template-areas:
+        "nav nav nav nav"
+        "header header header header"
+        "primeraSeccion primeraSeccion primeraSeccion primeraSeccion "
+        "segundaSeccion segundaSeccion segundaSeccion segundaSeccion"
+        "form form form form"
+        "footer footer footer footer"
+        ;
+    }
+    .aside{
+        display: none;
+    }
+    .nav{
+        flex-direction: row;
+    }
+    .nav ul{
+        display: flex;
+        /* flex-direction: row; */
+    }
+
+}
+
+@media (max-width: 480px){
+    .segundaSeccion img{
+        display: none;
+    }
+    
+}
